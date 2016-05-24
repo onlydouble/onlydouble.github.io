@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>break</title>
+<script type="text/javascript">
+var num=1;
+for(num=1;num<=10;num++){
+if(num==5){break;}
+document.write("这是第"+num+"个数"+"<br>");
+}
+var score=new Array(88,96,75,56,98);
+var i=0;
+while(i<score.length){
+	if(score[i]<60){ document.write("你的成绩不合格，不用循环了");break;
+}
+	document.write("你的成绩是："+score[i]+"<br>");
+	i=i+1;
+}
+var s=0;
+for(s=0;s<=10;s++){
+	if(s==5){continue;}
+	document.write("数值："+s+"<br>");}
+var scorea=new Array(88,96,75,56,98);
+var i;
+for(i=0;i<scorea.length;i++){
+	if(scorea[i]<60){ document.write("你的成绩不合格，不用循环了"+"<br>");continue;
+}
+	document.write("你的成绩是："+scorea[i]+"<br>");
+	
+}
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

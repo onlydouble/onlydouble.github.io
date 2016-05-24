@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>history</title>
+	<script type="text/javascript">
+		var H=window.history.length;
+		document.write(H);
+		function goback(){
+			window.history.back();  //或者window.history.back();
+		}
+		function gofoward(){
+			window.history.forward();  //或者window.history.back();
+		}
+    </script>
+</head>
+<body>
+点击下面的锚点链接，添加历史列表项:
+    
+    <br />
+    <a href="#target1">第一个锚点</a>
+    <a name="target1"></a>
+    <br />
+    <a href="#target2">第二个锚点</a>
+    <a name="target2"></a>
+    <br /><br />
+    使用下面按钮，实现返回前一个页面:
+    <form>
+       <input type="button"  value="返回前一个页面" onclick="goback();" />    
+           <input type="button"  value="返回下一个页面" onclick="gofoward();" />      
+    </form>
+</body>
+</html>

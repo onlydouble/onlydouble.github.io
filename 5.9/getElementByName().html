@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function getnum(){
+			var x=document.getElementsByName("alink");
+			alert(x.length);
+		}
+	</script>
+</head>
+<body>
+	<a name="alink" href="#" />我是链接一</a>
+	<a name="alink" href="#" />我是链接二</a>
+	<a name="alink" href="#" />我是链接三</a>
+<br/>
+<input type="button" value="看看有几项" onclick="getnum()" />
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setTimeout()</title>
+	<script type="text/javascript">
+		function clock(){
+			setTimeout("alert('hello!')",3000);
+		}
+		var num=0;
+		function infos(){
+			document.getElementById("txt").value=num;
+			num=num+1;
+			 i=setTimeout("infos()",1000);
+		}
+		
+		
+		var numa=0;
+		function infose(){
+			document.getElementById("txt1").value=numa;
+			numa=numa+1;
+		setTimeout("infose()",1000);	
+		}
+                     setTimeout("infose()",1000);
+	</script>
+</head>
+<body>
+	<input value="start" type="button" onclick="clock()" />
+	<input value="start" type="button" onclick="infos()" id="txt" />
+	<input value="stop" type="button" onclick="clearTimeout(i)" id="txt" />
+	<input type="text" id="txt1" />
+</body>
+</html>

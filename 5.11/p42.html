@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function getElementByName(node,classname) {
+			if(node.getElementByzName){
+				return node.getElementByzName(classname);
+			}
+			else{
+				var results = new Array();
+				var elems=node.getElementByTagName('*');
+				for(var i=0;i<elems.length;i++){
+					if (elems[i].className.indexOf(classname) !=-1){
+						results[results.length]=elems[i];
+					}
+				}
+				return results;
+			}
+			
+		}
+	</script>
+</head>
+<bodyz>
+	
+</body>
+</html>

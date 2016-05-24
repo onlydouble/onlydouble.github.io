@@ -1,0 +1,49 @@
+<html>  
+    <head>  
+        <title></title>  
+          
+        <script type="text/javascript">  
+              
+            // 往window.onload事件增加处理函数  
+            function addLoadEvent(func)  
+            {  
+                var oldOnload = window.onload;  
+                if(typeof window.onload != "function")  
+                {  
+                    window.onload = func;  
+                }  
+                else  
+                {  
+                    window.onload = function()  
+                    {  
+                        oldOnload();  
+                        func();  
+                    }  
+                }  
+            }  
+            // ------------------------------------------------------------------  
+              
+            function func1 () {  
+                alert("func1");  
+            }  
+            function func2 () {  
+                alert("func2")  
+            }  
+            function func3 () {  
+                alert("func3")  
+            }  
+              
+            addLoadEvent(func1);  
+            addLoadEvent(func2);  
+            addLoadEvent(func3);  
+              
+        </script>  
+          
+    </head>  
+      
+    <body>  
+        <p>addLoadEvent test</p>  
+          
+          
+    </body>  
+</html>

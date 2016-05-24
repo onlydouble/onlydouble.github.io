@@ -1,0 +1,17 @@
+body{margin: 1em 30%;background-image:url(bg02.jpg); background-repeat:no-repeat;}
+		#style li a{
+			text-decoration: none; display: block;margin:auto 8px;padding: 2px 4px;background: transparent;color:#4F94CD;
+		} 
+		#style li{
+			float: left;list-style-type: none;
+		}
+		 img{
+			width: 100%;overflow: none;display: block; padding: 10px;background: #fff;
+		}
+		#description{
+			text-align: center;padding: 5px auto;font-size: 20px;
+		}
+		#logo{
+			text-align: center;font-size: 14px;margin-top: 100px;
+		}
+		

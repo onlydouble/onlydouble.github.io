@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function count(){
+		var he=document.getElementById("txt1").value;
+		 var me=document.getElementById("txt2").value;
+		var she= document.getElementById("select").value;
+		var result="";
+		switch(she){
+			case "+":
+			result = parseFloat(he)+parseFloat(me);
+			break;
+			case "-":
+			result = parseFloat(he)-parseFloat(me);
+			break;
+			case "*":
+			result = parseFloat(he)*parseFloat(me);
+			break;
+			default:
+			result = parseFloat(he)/parseFloat(me);
+		}
+		document.getElementById("fruit").value=result;
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="text" id="txt1"/>
+		<select id='select'>
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="/">/</option>
+			<option value="*">*</option>
+		</select>
+	<input type="text" id="txt2"/>
+	<input type="button"  value="=" onclick="count()" / >
+	<input type="text" id="fruit"/>
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>prompt</title><script type="text/javascript">
+var myname=prompt("请输入姓名");
+if(myname!=null){alert("你好"+myname);}
+ else{alert("你好 my friend");}
+ function rec(){var score;
+ score=prompt("请输入分数");
+ if(score>=90){document.write("你很棒");}
+ if(score>=75){document.write("还不错");}
+ if(score>=60){document.write("继续努力");}
+ else{document.write("需要努力了");}
+ }
+ function wopen(){window.open('http://www.baidu.com','-blank','width=300,height=200,menubar=no,toolbar=no,status=no,scrollbars=yes');
+}
+var mywin=window.open('http://www.baidu.com');
+mywin.close();
+
+</script>
+</head>
+
+<body>
+<input type="button" name="button" value="点击我" onclick="rec()" />
+<input type="button" name="button" value="点击我" onclick="wopen()" />
+</body>
+</html>

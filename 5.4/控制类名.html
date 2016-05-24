@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>className</title><style type="text/css">
+	body{font-size:16px;}
+	.one{border:1px solid #eee; width:230px; height:50px; background:#ccc; color:red;}
+	.two{border:1px solid #eee; width:230px; height:50px; background:#9cf; color:blue;}
+	
+</style>
+</head>
+<body>
+<p id="p1">javascript使网页显示动态效果并实现与用户交互功能</p>
+<input type="button" value="添加样式" onclick="add()" />
+<p id="p2">javascript使网页显示动态效果并实现与用户交互功能</p>
+<input type="button" value="更改外观" onclick="modify()" />
+<script type="text/javascript">
+function add(){
+	 var mychar=document.getElementById("p1");
+	 mychar.className="one";
+}
+function modify(){
+	 var mychar=document.getElementById("p2");
+	 mychar.className="two";
+}
+</script>
+
+</body>
+</html>

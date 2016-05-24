@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>4-1编程练习</title>
+<style type="text/css">
+	body{font-size:12px;}
+	#txt{
+		height:400px;
+		width:600px;
+		border:1px solid #333;
+		padding:5px;}
+	p{
+		line-height:18px;
+		text-indent:2em;
+		}
+</style>
+</head>
+
+<body>
+	<h2 id="con">javascript课程</h2>
+	<div id="txt">
+		<h5>avascript使网页显示动态效果并实现与用户交互功能</h5>
+		<p>1.avascript使网页显示动态效果并实现与用户交互功能</p>
+		<p>2.avascript使网页显示动态效果并实现与用户交互功能</p>
+		<p>3.avascript使网页显示动态效果并实现与用户交互功能</p>
+		</div>
+	<form>
+		<input type="button" value="改变颜色" onclick="co()" />
+		<input type="button" value="改变宽高" onclick="hi()" />
+		<input type="button" value="隐藏内容"  onclick="no()"/>
+		<input type="button" value="显示内容"  onclick="bl()"/>
+		<input type="button" value="取消设置"  onclick="dis()"/>
+	</form>
+	<script type="text/javascript">
+		function co(){
+		var my=document.getElementById("con");
+		my.style.color="red";
+		}
+		function hi(){
+		document.getElementById("txt").style.width="800px";
+		document.getElementById("txt").style.height="600px";
+		}
+		function no(){
+		var mye=document.getElementById("txt");
+		  mye.style.display="none";
+		}
+		function bl(){
+		document.getElementById("txt").style.display="block";
+		}
+		function dis(){
+	     var me=confirm("你确定取消设置？");
+		if(me==true){window.open('编程练习.html','_selft');}
+		else{}
+		
+		}
+		
+	</script>
+		</body>
+</html>

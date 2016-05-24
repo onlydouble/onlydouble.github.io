@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>setInterval()</title>
+	<script type="text/javascript">
+
+		function clock(){
+			var time=new Date();
+			attime=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+			document.getElementById("clock").value=attime;
+		}
+		var i=setInterval("clock()",1000);
+	</script>
+</head>
+<body>
+
+	<input type="text" id="clock" size=5 style="background:#000; color:#0f0;" />
+	<input type="button" value="stop" onclick="clearInterval(i)" size=5 style="background:#000; color:#0f0;" />
+</body>
+</html>
+
+
+

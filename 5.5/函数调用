@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数调用</title>
+	<script type="text/javascript">
+		function tcon(){
+			alert("恭喜你学会调用函数了");
+		}
+		tcon();
+	function add2(x,y,z){
+		 sum=x+y+z;
+		document.write("值为："+sum);
+	}
+	add2(5,8,3);
+
+	</script>
+</head>
+<body>
+	<form>
+		<input value="点击我" onclick="tcon()" type="button"/>
+	</form>
+</body>
+</html>

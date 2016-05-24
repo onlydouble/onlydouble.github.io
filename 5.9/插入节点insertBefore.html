@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<title>insertBefore</title>
+</head>
+<body>
+
+<ul id="test"><li >JavaScript</li><li>HTML</li></ul> 
+ 
+<script type="text/javascript">
+
+  var otest = document.getElementById("test");  
+  var ote=document.createElement("li");
+  
+  ote.innerHTML="php";
+  otest.insertBefore(ote,otest.childNodes[0]);//插入元素节点
+  var os=document.getElementsByTagName("li")[2];
+    otest.removeChild(os);//删除元素节点
+test.replaceChild(ote,os);//替换元素节点
+  
+</script> 
+
+</body>
+</html>

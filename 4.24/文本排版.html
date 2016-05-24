@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="文本排版.css" rel="stylesheet" type="text/css"/>
+<title>css文字排版</title>
+
+<style type="text/css">
+p.hang{text-indent:-5em;}
+p.two{color:red;}
+img:first-line{margin-top:100px; float:left; width:50px; height:50px;}
+.oldPrice{text-decoration:line-through}
+span.raise{vertical-align:super;text-shadow:#00FF00 2px 2px 2px;}
+img.aglin{vertical-align:middle;}
+span.lower{ vertical-align:20px; white-space:pre; }
+ 
+</style></head>
+<body>
+<img src="../知乎/images/1.jpg" />
+<p id="con" class="hang"> 你们干什么today is happy day .<span class="raise">about this ,i study </span>to<span class="lower"> study l     e    a   r    n</span>i<a>ng css q</a>uanweizhinan and youxianji ,ruanzhi and so on </p>
+<script type="text/javascript">
+var mychar=document.getElementById("con");
+document.write("p元素值："+mychar.className+"<br>");
+function modifyclass(){
+ mychar.className="two";
+}
+</script>
+<form>
+<input type="button" value="更改属性" onclick="modifyclass()" />
+</form>
+<p>原价：<span class="oldPrice">300</span>现价：200</p>
+<p>hehe da youxianji ,ruanzhi and so onyouxianji ,ruanzhi and so onyouxianji ,ruanzhi and so onyouxianji ,ruanzhi and so on</p>
+<p>Although a thick and juict hamburger with bacon and mushroo<img   class="aglin"src="../知乎/images/4.jpg" />ms runs a cloose second there are many ways to greet a person, but the words are not as important as the act of greeting it self</p>
+</body>
+</html>

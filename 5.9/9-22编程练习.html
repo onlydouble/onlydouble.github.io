@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		td{
+			height: 30px;
+		}
+	</style>
+  <script type="text/javascript"> 
+  
+      window.onload = function(){
+      	var tr=document.getElementsByTagName("tr");
+      	for(var i= 0;i<tr.length;i++)
+	      {	
+	      	bgcChange(tr[i]);
+	      }
+             }
+             function bgcChange(obj){
+             obj.onmouseover=function(){
+             	obj.style.backgroundColor="#f2f2f2";
+             }
+	obj.onmouseout=function(){
+		obj.style.backgroundColor="#fff";
+	}
+             }
+
+	   var num=2;
+     function appendb(){
+     	num++;
+     	var tr=document.createElement("tr");
+	 var td=document.createElement("td");
+	 var tm=document.createElement("td");
+     	td.innerHTML="xh00"+num;
+     	tm.innerHTML="第"+num+"个学生";
+     	var del=document.createElement("td");
+     	del.innerHTML="<a href='javascript:'; onclick='a(this)'>删除</a>";
+     	 var tab=document.getElementById("table");
+        tab.appendChild(tr);
+     	tr.appendChild(td);
+     	tr.appendChild(tm);
+     	tr.appendChild(del);
+       var tr = document.getElementsByTagName("tr");
+          for(var i= 0;i<tr.length;i++)
+          {
+              bgcChange(tr[i]);
+          }
+     }
+      // 编写一个函数，供添加按钮调用，动态在表格的最后一行添加子节点；
+     
+    		
+   	 
+   function a(p)
+     {
+         var tr=p.parentNode.parentNode;
+         tr.parentNode.removeChild(tr);
+     }
+
+
+  </script> 
+ </head> 
+ <body> 
+	<table border="1" width="50%"  id="table">
+		<tr>
+			<th>学号</th>
+			<th>姓名</th>
+			<th>操作</th>
+		</tr>
+		<tr>
+			<td>xh001</td>
+			<td>小明</td>
+			<td><a href="javascript:;" onclick="a(this)">删除</a></td>
+		</tr>
+			<td>xh002</td>
+			<td>小文</td>
+			<td><a href="javascript:;" onclick="a(this)">删除</a></td>
+		</tr>
+	</table><br/>
+	<input value="添加一行" onclick="appendb()" type="button" />
+	 <!--在添加按钮上添加点击事件  -->_
+ </body>
+</html>

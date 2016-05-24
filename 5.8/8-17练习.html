@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+    
+</head>
+<body><h3>操作成功</h3>
+	<span id="second">5</span>
+	<span>秒后返回主页</span>
+	<a href="javascript:back();">返回</a>
+	<script type="text/javascript">  
+	var num=document.getElementById("second").innerHTML;
+	function count(){
+		num--;
+		document.getElementById("second").innerHTML=num;
+		if(num==0){
+			location.assign("https://www.baidu.com/?tn=57095150_1_oem_dg");
+		}
+	}
+	setInterval("count()",1000);
+	function goback(){
+		window.history.back();
+	}
+
+ </script> 
+	
+</body>
+</html>

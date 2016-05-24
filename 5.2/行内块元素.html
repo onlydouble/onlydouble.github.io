@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>行内块元素</title>
+<style type="text/css">
+div{border:1px black solid; font-size:16px;}
+span.two{ display:block; line-height:15px; width:100px; margin:20px 0; padding-left:15px; border:dotted 1px;}
+
+div.four p{border:1px dotted black; display:inline; text-align:center;line-height:14px; width:55p}
+div.three p{border:1px dotted black; display:inline-block; text-align:center;line-height:14px; height:50px;}
+</style>
+</head>
+
+<body>
+<div >The is the content of a block -level element Within thasblock-level element isanthother block -level element
+<span class="two">look. it's a block-level paragraph </span>here's the rest of the DIV.wthin is still block-level</div>
+<div class="four">The is the content of a block -level element Within thasblock-level element isanthother block -level element
+<p>look. it's a block-level paragraph </p>here's the rest of the DIV.wthin is still block-level</div>
+<div class="three">The is the content of a block -level element Within thasblock-level element isanthother block -level element
+<p>look. it's a block-level paragraph </p>here's the rest of the DIV.wthin is still block-level</div>
+<h3 style="display:run-in; border:dotted 1px; font-size:125%; font-weight:bold;">block -level element</h3>
+<p style="border-top:1px solid #000; padding-top:20px;">look. it's a block-level paragraphhere's the rest of the DIV.wthin is still block-level </p>
+</body>
+</html>

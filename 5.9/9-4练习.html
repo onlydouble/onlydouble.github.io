@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		请选择你的爱好:<br/>
+		<input value="" type="checkbox" name="hobby" id="hobby1" />登山<br/>
+		<input value="" type="checkbox" name="hobby" id="hobby2" />游泳<br/>
+		<input value="" type="checkbox" name="hobby" id="hobby3" />唱歌<br/>
+		<input value="" type="checkbox" name="hobby" id="hobby4" />跳舞<br/>
+		<input value="全选"  type="button" onclick="checkall()" />
+		<input value="全不选"  type="button" onclick="clearall()" />
+		<p>请选择你喜爱的序号1-4：</p>
+		<input name="wb" id="wb" type="text" />
+		<input value="确定" name="ok" type="button" onclick="checkone()">
+		</form>
+	<script type="text/javascript">
+	function checkall(){
+		var hobby=document.getElementsByTagName("input");
+		for(var i=0;i<hobby.length;i++){
+			hobby[i].checked=true;
+		}
+	}
+	function clearall(){
+		var hobb=document.getElementsByName("hobby");
+		for (var i=0;i<hobb.length;i++){
+		hobb[i].checked=false;}
+	}
+	function checkone(){
+		
+		var hob=document.getElementById("wb").value;//geElement这里没有s
+			if(parseInt(hob)>4||parseInt(hob)<1)
+			{
+				alert("不在范围内请重新输入1-4！");
+			}
+			var hobb=document.getElementsByName("hobby");//这里有s
+			hobb[parseInt(hob)-1].checked=true;//这里paseInt(hob)后没有length；
+		
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>特殊性</title>
+<style type="text/css">
+h1{color:red;}/*specifity=0,0,0,1*/
+p em{color:purple;}/*specifity=0,0,0,2*/
+.grape{color:purple;}/*specifity=0,0,1,0*/
+*.bright{color:yellow;}/*specifity=0,0,1,0*/
+p.bright em.dark{color:maroon;}/*specifity=0,0,2,2*/
+#id216{color:blue;}/*specifity=0,1,0,0*/
+div#sidebar*[href]{color:silver;}/*specifity=0,1,1,1*/
+</style>
+</head>
+
+<body>
+</body>
+</html>
